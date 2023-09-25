@@ -1,0 +1,75 @@
+.form-control-lg {
+    padding: 0.35rem 0.25rem;
+}
+.membership .shareRefer ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 7px;
+}
+.profile_content h4 {
+    font-size: 17px!important;
+}
+.profile_details .education h4{
+    font-size: 22px !important;
+    font-style: normal;
+    margin-bottom: 0;
+    font-family: 'robotobold';
+}
+.profile_details .education .eduSubWrap{
+    margin-bottom: 13px;
+}
+.profile_details .education p{
+    margin-bottom: 0;
+}
+.profile_details .education span{
+    color: #808080;
+    font-size: .75rem!important;
+    font-style: italic;
+}
+.profile_details .social-icons {
+    position: relative;
+    bottom: 30px;
+}
+.profile_details .social-icons ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 11px;
+}
+.profile_details .associationWrapper{
+    margin-bottom: 30px;
+}
+.profile_details .associationWrapper ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+}
+.profile_details .associationWrapper ul li img{
+    width: 29%;
+    padding-bottom: 10px;
+}
+.searchProfileItem  ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 11px;
+}
+.chatbox {
+    padding-block: 0px;
+}
+.drk__grn__bg{
+    background: #1bb162; 
+    background: linear-gradient(90deg, rgba(195,236,225,1) 0%, rgba(27,177,98,1) 3%, rgba(1,138,66,1) 97%);
+    border-radius: 10px; 
+    padding: 20px;
+}
+.nav-pills .nav-link.active{
+    background-color: #f6a32f;
+}
+.nav-pills .nav-link.active a{
+    color: #0a278e;
+}
+.drk__grn__bg h5{ color: #fff; font-family: 'noto_serifbold'; font-size: 20px; margin-bottom: 30px;}
+.drk__grn__bg ul li a{color: #c0d5f3; font-family: 'robotoregular';}
+.drk__grn__bg ul li a:hover{color: #fff;}
+.drk__blu__bg{
+    background: linear-gradient(90deg, rgba(66,103,238,1) 0%, rgba(48,127,224,1) 97%, rgba(164,228,254,1) 100%);
+}

@@ -1,0 +1,161 @@
+.nav-bar{display: none;}
+header nav{background: none;  z-index: 1000; width: 100%;  float: left;}
+header nav ul{display: flex; margin-bottom: 0;}
+header nav ul li{display: inline-block; position: relative;}
+header nav:after{content: ""; display: block; clear: both;}
+
+header nav ul li a{color: #fff; display: block; padding: 12px 22px; font-size: 18px; text-transform: uppercase; font-family: 'robotomedium' !important;}
+
+ 
+header nav ul li:hover .down-icon{border: #000 solid; border-width: 0 2px 2px 0;}
+
+
+
+header nav ul li .sub-menu li{margin: 0; /*float: none;*/ display: block!important; width: 100%;}
+header nav ul li .sub-menu li a{padding: 7px 20px!important; display: block!important; color: #fff!important;font-size: 13px; margin: 0!important; letter-spacing: 1px;}
+header nav ul li:last-child a{padding-right: 0;}
+header nav ul li .sub-menu li a:hover{background: #00375a; color: #a1a1a1!important;}
+header nav ul li .sub-menu li a:before{display: none;}
+header nav ul li .children span{display: none; }
+header nav ul li .children li{display: block; width: 100%; border-bottom: 1px solid #ffffff99;}
+header nav ul li .children li a{margin-left: 30px; }
+header nav ul li .fa-angle-down{position: relative;  top: 3px;}
+header nav ul li a svg{width: 30px; height: 20px; float: right; margin-top: 3px;}
+.mobile-logo,.mobile-footer{display: none;}
+
+.head_bottom ul{justify-content: space-between;}
+
+/*responsive nav style*/
+@media all and (max-width: 991px) {
+
+.nav-bar{display: block; width: auto; position: fixed; top: 32px; right: 0; z-index: 99;}
+.nav-bar span{float: left; font-size: 20px; padding: 20px; color: #fff;}
+.nav-bar .fa-bars{display: block; padding:7px 10px; color: #ffffff; overflow: hidden; font-size: 24px; float: right;}
+.fa-times{position: absolute; right: 0; top: 0; padding: 10px; font-size: 20px; color: #0567a6;}
+
+header nav{width: 80%; height: auto; position: fixed; right: 100%; top : 0; overflow: hidden; height: 100%; margin: auto;  
+background: #fff; box-shadow: #b1afaf61 1px 0px 7px;}
+header nav ul li{margin: 0; display: block; width: 100%;}
+header nav ul li a{color: #f7941e!important; padding: 10px 16px!important; font-size: 15px;}
+header nav ul li i{margin-right: 0;}
+header nav ul li.current-menu-item a{color:#ae1408;}
+header ul li a{display: block;}
+header nav ul li .sub-menu{width: 100%; position: relative; overflow: hidden; display: none;}
+header nav ul li:hover .sub-menu{display: none;}
+header nav ul li ul li:first-child{/*border-top: 1px solid #ffffff99;*/}
+header nav ul li .sub-menu span{display: inline-block;}
+header nav ul li .sub-menu a{color: #fff!important;}
+header nav ul li .fa-angle-down{position: relative; top: 3px;}
+header nav ul li:hover:before, header nav ul li.current-menu-item a:before{display: none;}
+.mobile-logo,.mobile-footer{display: block;}
+.mobile-logo{background: #fff; text-align: center; padding: 20px 10px; border-bottom: #0567a6 1px solid;}
+.mobile-footer{text-align: center; position: absolute; bottom: 0; width: 100%; background: #252525; padding: 10px 19px;}
+.mobile-footer ul{width: 100%; margin-top: 0;}
+.mobile-footer ul li{border: none; color: #fff; font-size: 14px;}
+.mobile-footer ul li a{display: inline-block; text-transform: inherit!important;}
+.noscroll{background: rgba(255,255,255,0.9); position: fixed; z-index: 1000000; top: 0; left: 0; width: 100%; height: 100%;
+opacity: 1; -webkit-transition: .5s ease; -moz-transition: .5s ease; -ms-transition: .5s ease; -o-transition: .5s ease;
+transition: .5s ease;}
+header nav ul li:last-child{border-bottom: none;}
+
+}
+
+
+/****************start new CSS****************/
+.down-icon{position: absolute; content: ""; top: 18px; right: 10px; border: #000 solid; border-width: 0 2px 2px 0;
+padding: 2px; transform: rotate(45deg); z-index: 99; width: 6px; height: 6px; transition: all 500ms ease-in-out;}
+
+
+@media (min-width: 320px) and (max-width: 991px) {
+
+header nav ul li a svg{fill: #fff;}
+header nav ul li .sub-menu{min-width: 100%; background: #f7941e;}
+header nav ul li .sub-menu ul{background: #0567a6;}
+.mobile-footer ul li a{text-transform: inherit; padding: 0!important; margin: 0!important; color: #fff!important;
+background: none !important; font-size: 12px;}
+.down-icon{/*right: 0; color: #f7941e; width: 30px;*/}
+header nav ul li a{margin-right: 40px;}
+.sub-menu li a{margin-right: 0;}
+#cssmenu .menu{margin: 0 auto; overflow: hidden; overflow-y: scroll; height: calc(100vh - 145px);}
+.mobile-logo img{max-width: 180px;}
+#cssmenu .menu li:last-child{}
+#cssmenu .menu li:last-child a{background: #f5aa56; color: #fff; margin: 0 16px 16px 16px; display: inline-block;
+color: #fff!important;}
+#menu-item-49{margin-bottom: 20px;}
+.menu-header-main-menu-container .menu{height: calc(100vh - 183px); overflow: auto;
+margin-top: 0;}
+.menu-header-main-menu-container ul li a{display: block!important; margin: 0!important; text-align: left;
+font-size: 15px!important; color: #000!important;}
+.down-icon i{font-size: 16px;}
+header nav ul li .sub-menu li a{text-transform: inherit; font-size: 14px!important;}
+
+}
+
+@media (min-width: 992px) {
+
+/*.down-icon{display: none;}*/
+
+}
+/****************end new CSS****************/
+
+/**************start 2nd step_menu*************/
+header nav ul li ul.sub-menu{display: none; background: #201d1d; position: absolute; width: 260px; z-index: 1000; left: 0;
+margin: 0; padding: 20px 0; text-align: left; transition: all 500ms ease-in-out; border-top: #24b14b 3px solid;}
+header nav ul li:hover > .sub-menu{display: block; transition: all 500ms ease-in-out;}
+header nav ul li:hover ul.sub-menu li ul.sub-menu{position: absolute; left: 230px !important; top: 0; background: #0567a6;}
+header nav ul li:last-child .sub-menu{left: -95px;}
+header nav ul li:hover > .sub-menu li a{background: none;}
+
+@media (min-width: 1300px) {
+
+header nav ul li ul.sub-menu .down-icon{display: block; transform: rotate(-45deg); border: #fff solid;
+border-width: 0 2px 2px 0; top: 15px;}
+
+
+}
+
+
+/*responsive nav style*/
+@media (min-width: 320px) and (max-width: 991px) {
+
+header nav ul li:hover .sub-menu { display: none; max-height: 300px; overflow-y: auto; overflow-x: hidden;}
+header nav ul li:hover:before, header nav ul li.current-menu-item a:before{display: none;}
+header nav ul li:hover ul.sub-menu li ul.sub-menu{position: inherit; left: 0 !important; top: 0; background: #252525;}
+header nav ul li ul.sub-menu{position: relative;}
+
+.down-icon{right: 0; border:none; border-width: 0; width: 15%; height: 100%; margin: 0; cursor: pointer; top: 0; 
+transform: rotate(0deg); position: absolute;}
+.down-icon:after{content: ""; position:absolute; right: 11px; border: #212529 solid; border-width: 0 2px 2px 0; 
+width: 12px; height: 12px; margin: 5px; cursor: pointer; top: 8px; transform: rotate(45deg);}
+
+.sub-menu span.down-icon{right: 0; border:none; border-width: 0; width: 100%; height: 100%; margin: 0; cursor: pointer;
+top: 0; transform: rotate(0deg); position: absolute; z-index: 999; display: block;}
+.sub-menu span.down-icon:after{content: ""; position:absolute; right: 11px; border: #212529 solid; border-width: 0 2px 2px 0; 
+width: 12px; height: 12px; margin: 5px; cursor: pointer; top: 8px; transform: rotate(45deg);}
+header nav ul li:last-child .sub-menu{left: 0px;}
+
+}
+/**************end 2nd step_menu*************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+header nav ul{width: 100%; text-align: center;}
+header nav ul li{float: none; display: inline-block;}
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+header nav ul li a{font-size: 12px; margin: 0 6px!important;}
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1264px) {
+
+header nav ul li a{font-size: 12px; margin: 0 6px;}
+
+
+}
